@@ -4,19 +4,24 @@ import './App.css'
 
 function App() {
 
-  let [counter, setCounter] = useState(15)
+  const [counter, setCounter] = useState(15)
 
   //let counter = 15
 
   const addValue = () => {
     if(counter<20){
-    setCounter(++counter)
+    // setCounter(prevCounter => prevCounter + 1) 
+    // setCounter(Counter => Counter + 1)
+    // setCounter(counter => counter + 1) they'll increase the value by 3 on each click
+    setCounter(counter + 1)
+    // setCounter(counter + 1)
+    // setCounter(counter + 1) // this will increase the value only once 
     console.log("clicked", counter)
   }
   }
   const removeValue = () => {
     if(counter>0){
-    setCounter(--counter)
+    setCounter(counter - 1)
     console.log("clicked", counter)
     }
   }
