@@ -1,8 +1,12 @@
-function App() {
+import Legion from "./Legion"
 
+function App() {
+  
   return (
-    <h1>Legion Codes Vite | Priyanshu </h1>
-  )
+    <>
+    <Legion />
+    </>
+  );
 }
 
 export default App
